@@ -1,0 +1,12 @@
+diff -up diskv-2.0.1/keys_test.go.fix_printf diskv-2.0.1/keys_test.go
+--- diskv-2.0.1/keys_test.go.fix_printf	2017-08-14 19:35:58.000000000 +0200
++++ diskv-2.0.1/keys_test.go	2018-03-21 12:58:07.574094257 +0100
+@@ -135,7 +135,7 @@ func TestKeysCancel(t *testing.T) {
+ 	}
+ 
+ 	if want, have := cancelAfter, received; want != have {
+-		t.Errorf("want %d, have %d")
++		t.Errorf("want %d, have %d", want, have)
+ 	}
+ }
+ 
